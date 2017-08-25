@@ -1,0 +1,7 @@
+<h3> Links </h3>
+
+<% @links.each do |link| %>
+  Title: <%= link.title %>
+  Tag: <%= link.tags.map(&:name).join(", ") %>
+  URL:   <%= link.url   %><br>
+<% end %>
